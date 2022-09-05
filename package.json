@@ -13,6 +13,7 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "./src/Integration/examples/BDD",
     "cucumberJson": {
       "generate": true,
       "outputFolder": "cypress/cucumber-json",
