@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cypress run",
+    "test": "npx run",
     "headTest": "npm run test -- --headed",
     "chromeTest": "npm run test -- --browser chrome",
     "postchrome-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
