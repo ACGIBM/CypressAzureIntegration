@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "testing": "npx run",
-    "headTest": "npm run testing -- --headed",
-    "chromeTest": "npm run testing -- --browser chrome",
+    "test": "npx run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
     "postchrome-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
     "script-chrome": "npm run chrome-test || npm run postchrome-test",
-    "recordDashboardTest": "npm run testing -- --record --key 24b42eb3-30b1-41c1-9def-b29a3765e6a5 --reporter mochawesome",
-    "GreenKartTest": "npm run testing -- --spec \"cypress/Integration/GreenKart/*\""
+    "recordDashboardTest": "npm run test -- --record --key 24b42eb3-30b1-41c1-9def-b29a3765e6a5 --reporter mochawesome",
+    "GreenKartTest": "npm run test -- --spec \"cypress/Integration/GreenKart/*\""
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
